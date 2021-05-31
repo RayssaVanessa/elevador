@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elevador no térreo"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/circle"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_entrar"
+        android:text="Entrar"
+        android:textSize="10dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_status" />
+
+    <Button
+        android:id="@+id/bt_sair"
+        android:backgroundTint="#FF0000"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Sair"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_entrar" />
+
+    <Button
+        android:id="@+id/bt_subir"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Subir"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_status" />
+
+    <Button
+        android:id="@+id/bt_descer"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="#FF0000"
+        android:text="Descer"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_subir" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
